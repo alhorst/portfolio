@@ -1,0 +1,310 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: 'Raleway', sans-serif;
+}
+
+body {
+  background-color: #e3f6f5;
+}
+
+.resume-contents {
+  min-height: 100vh;
+  width: 80%;
+  margin: 2rem auto;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.left-section {
+  grid-column: span 2;
+  height: 100%;
+  background-color: #bae8e8;
+}
+
+.right-section {
+  grid-column: span 5;
+  height: 100%;
+  background-color: #fffffe;
+}
+
+.left-section-contents {
+  padding: 2rem 2rem;
+}
+
+.profile {
+  width: 100%;
+  border-bottom: 2px solid #ffd803;
+}
+
+.profile .profile-image {
+  width: 100%;
+  border-radius: 50%;
+  border: 8px solid #ffd803;
+}
+
+.name {
+  color: #272343;
+  font-size: 30px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  padding: 1rem 0;
+}
+
+.profession {
+  color: #272343;
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 2px;
+  font-weight: bold;
+  padding-bottom: 1rem;
+}
+
+.left-title {
+  color: #272343;
+  font-size: 20px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+}
+
+.contact-info ul li,
+.personal ul li {
+  padding: .4rem 0;
+  display: flex;
+  align-items: center;
+  color: #272343;
+  letter-spacing: 1px;
+  font-size: 18px;
+}
+
+a:link {
+  color: #272343;
+  background-color: transparent;
+  text-decoration: none;
+  opacity: 1;
+  transition: opacity .5 ease-out;
+}
+
+a:visited {
+  color: #272343;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:hover {
+  opacity: .5;
+  color: #ffd803;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.contact-info ul li i,
+.personal ul li i {
+  padding-right: 1rem;
+  font-size: 18px;
+  color: #2E86C1;
+}
+
+.skills ul li p {
+  padding: .4rem 0;
+  color: #272343;
+  font-size: 18px;
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.personal ul li {
+  text-transform: uppercase;
+}
+
+.right-section-contents {
+  padding: 2rem 2rem;
+}
+
+#greeting:hover {
+  letter-spacing: 10px;
+}
+
+.right-title {
+  color: #272343;
+  font-size: 40px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  padding: 2rem 0;
+  position: relative;
+  -webkit-transition: all 2s ease;
+  -moz-transition: all 2s ease;
+  -o-transition: all 2s ease;
+  transition: all 2s ease;
+}
+
+.gap {
+  padding-bottom: 2rem;
+}
+
+.about-me-contents {
+  font-size: 18px;
+  letter-spacing: 1px;
+  line-height: 2rem;
+}
+
+.experience-contents,
+.education-contents,
+.projects-contents {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-bottom: 2rem;
+}
+
+.exp-company-name,
+.education-school-name,
+.projects-company-name {
+  font-size: 23px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #272343;
+  padding-bottom: .1rem;
+}
+
+.exp-time-period,
+.educationp-time-period,
+.projects-time-period {
+  font-size: 15px;
+  letter-spacing: 1px;
+  line-height: 2rem;
+}
+
+.exp-position,
+.education-subject,
+.projects-name {
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #2E86C1;
+  padding-bottom: .1rem;
+}
+
+.projects-name {
+  border-bottom: 2px solid #ffd803;
+  width: 75%;
+}
+
+.exp-position {
+  border-bottom: 2px solid #ffd803;
+  width: 75%;
+}
+
+.exp-desc,
+.education-desc,
+.projects-desc {
+  font-size: 14px;
+  letter-spacing: .5px;
+  line-height: 1.2rem;
+  padding-top: .2rem;
+  padding-left: 5px;
+}
+
+/* Media queries */
+@media screen and (max-width:780px) {
+
+  .experience-contents,
+  .education-contents,
+  .awards-contents {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media screen and (max-width:780px) {
+  .left-section {
+    grid-column: span 3;
+  }
+
+  .right-section {
+    grid-column: span 4;
+  }
+
+}
+
+@media screen and (max-width:1200px) {
+  .resume-contents {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media screen and (max-width:390px) {
+  .resume-contents {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .name {
+    font-size: 20px;
+  }
+
+  .profession {
+    font-size: 18px;
+  }
+
+  .left-title {
+    font-size: 18px;
+  }
+
+  .right-title {
+    font-size: 18px;
+  }
+
+  .contact-info ul li,
+  .references ul li {
+    font-size: 12px;
+  }
+
+  .contact-info ul li i,
+  .references ul li i {
+    /* padding-right: 1rem; */
+    font-size: 12px;
+  }
+
+  .skills ul li p {
+    font-size: 12px;
+  }
+
+  .about-me-contents {
+    font-size: 16px;
+    line-height: 1.5rem;
+  }
+
+  .exp-company-name,
+  .education-school-name,
+  .projects-company-name {
+    font-size: 18px;
+  }
+
+  .exp-time-period,
+  .educationp-time-period,
+  .projects-time-period {
+    font-size: 16px;
+  }
+
+  .exp-position,
+  .education-subject,
+  .projects-name {
+    font-size: 18px;
+  }
+}
